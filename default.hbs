@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>{{meta_title}}</title>
+
+    <link rel="shortcut icon" href="{{asset "img/favicon.ico"}}">
+
+    {{!-- materialize.css --}}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen,projection"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    {{!-- highlight.js --}}
+    <link rel="stylesheet" type="text/css" media="screen,projection"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    {{!-- Font Awesome icons --}}
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset "css/font-awesome.min.css"}}"/>
+    {{!-- custom CSS --}}
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset "css/custom.css"}}"/>
+
+    {{!-- Ghost header --}}
+    {{ghost_head}}
+</head>
+<body>
+
+{{{body}}}
+
+<footer class="page-footer transparent no-padding-top">
+    <div class="footer-copyright transparent">
+        <div class="container">
+            <div class="blue-grey-text text-darken-1">
+                <p class="left">
+                    <a class="blue-grey-text text-darken-2" href="{{@blog.url}}">{{@blog.title}}</a>
+                    © 2016-{{date format="YYYY"}}
+                </p>
+                <p class="right">
+                    powered by
+                    <a class="blue-grey-text text-darken-2" href="https://github.com/vlad-s/ghosterial">ghosterial</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{{!-- jQuery --}}
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+{{!-- highlight.js --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{{!-- materialize.css --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+{{!-- Ghost footer --}}
+{{ghost_foot}}
+</body>
+</html>

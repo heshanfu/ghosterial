@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #424242 !important;
+}
+
+blockquote { border-left-color: #424242; }
+
+main { flex: 1 0 auto; }
+
+a {
+    text-decoration: underline;
+    color: #424242 !important;
+}
+
+a:hover { color: #000 !important; }
+
+.header { font-weight: 500; }
+
+.post-header-image, .header-image {
+    height: 45vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-header-image {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-header-wrapper {
+    display: block;
+    min-height: 15vh;
+}
+
+.navigation-menu {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.navigation-menu-item {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-bg-image {
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.card-title-text {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 16px !important;
+    width: 100%;
+}
+
+hr, .spacer {
+    height: 1px;
+    width: 100%;
+    margin: 15px 0;
+    display: block;
+    opacity: 0.5;
+    border: 0;
+}
+
+hr { background-color: black; }
+
+.footnotes-sep, .author-sep { margin: 4em 0; }
+
+.post-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 1em 0;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* Safari & iOS */
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); /* IE9 */
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.post-content .footnotes {
+    font-style: italic;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 600px) {
+    .post-content img { max-width: 120%; }
+}
+
+.post-content ul, .post-content ol { padding-left: 30px; }
+
+.post-content ul > li { list-style-type: circle; }
+
+.no-text-decoration { text-decoration: none; }
+
+.text-lower { text-transform: lowercase; }
+
+.text-upper { text-transform: uppercase; }
+
+.no-margin { margin: 0 !important; }
+
+.no-margin-top { margin-top: 0 !important; }
+
+.no-margin-bottom { margin-bottom: 0 !important; }
+
+.no-margin-left { margin-left: 0 !important; }
+
+.no-margin-right { margin-right: 0 !important; }
+
+.no-padding { padding: 0 !important; }
+
+.no-padding-top { padding-top: 0 !important; }
+
+.no-padding-bottom { padding-bottom: 0 !important; }
+
+.no-padding-left { padding-left: 0 !important; }
+
+.no-padding-right { padding-right: 0 !important; }

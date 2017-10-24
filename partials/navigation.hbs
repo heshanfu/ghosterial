@@ -1,0 +1,15 @@
+<div class="row center">
+    <div class="col s12 m8 offset-m2" style="margin-top: 15px;">
+        [
+        {{#foreach navigation}}
+            <span class="navigation-menu-item">
+            <a href="{{url absolute="true"}}" style="{{#if current}}font-weight: 600;{{/if}}"
+               class="no-text-decoration">
+                {{label}}
+            </a>
+        </span>
+        {{/foreach}}
+        ]
+        <hr>
+    </div>
+</div>

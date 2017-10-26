@@ -1,10 +1,10 @@
 {{!< default}}
 
 <div class="grey darken-4 header-image valign-wrapper center"
-     {{#if @blog.cover_image}}style="background-image: url({{@blog.cover_image}});"{{/if}}>
+     {{#if @blog.cover_image}}style="background-image: url({{img_url @blog.cover_image}});"{{/if}}>
     <div class="container">
         <h3 class="white-text"><strong>{{@blog.title}}</strong></h3>
-        <h5 class="grey-text text-lighten-1">{{@blog.description}}</h5>
+        <h5 class="grey-text text-darken-1">{{@blog.description}}</h5>
     </div>
 </div>
 

@@ -6,7 +6,11 @@
     <meta name="HandheldFriendly" content="True"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>{{meta_title}}</title>
+    {{#is "index"}}
+        <title>{{@blog.title}}</title>
+    {{else}}
+        <title>{{meta_title}} - {{@blog.title}}</title>
+    {{/is}}
 
     <link rel="shortcut icon" href="{{asset "img/favicon.ico"}}">
 
@@ -21,7 +25,6 @@
     <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset "css/font-awesome.min.css"}}"/>
     {{!-- custom CSS --}}
     <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset "css/custom.css"}}"/>
-
     {{!-- Ghost header --}}
     {{ghost_head}}
 </head>
@@ -32,14 +35,13 @@
 <footer class="page-footer transparent no-padding-top">
     <div class="footer-copyright transparent">
         <div class="container">
-            <div class="blue-grey-text text-darken-1">
-                <p class="left">
-                    <a class="blue-grey-text text-darken-2" href="{{@blog.url}}">{{@blog.title}}</a>
+            <div class="grey-text text-darken-1 center">
+                <p class="left no-float-xs">
+                    <a href="{{@blog.url}}">{{@blog.title}}</a>
                     © 2016-{{date format="YYYY"}}
                 </p>
-                <p class="right">
-                    powered by
-                    <a class="blue-grey-text text-darken-2" href="https://github.com/vlad-s/ghosterial">ghosterial</a>
+                <p class="right no-float-xs">
+                    powered by <a href="https://github.com/vlad-s/ghosterial" target="_blank">ghosterial</a>
                 </p>
             </div>
         </div>

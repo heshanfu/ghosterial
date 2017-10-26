@@ -1,15 +1,18 @@
 <div class="row center">
-    <div class="col s12 m8 offset-m2" style="margin-top: 15px;">
+    <div class="col s12 m8 offset-m2 grey-text text-darken-3" style="margin-top: 15px;">
         [
         {{#foreach navigation}}
             <span class="navigation-menu-item">
-            <a href="{{url absolute="true"}}" style="{{#if current}}font-weight: 600;{{/if}}"
-               class="no-text-decoration">
-                {{label}}
+            <a href="{{url absolute="true"}}" class="no-text-decoration">
+                {{#if current}}
+                    <strong>{{label}}</strong>
+                {{else}}
+                    {{label}}
+                {{/if}}
             </a>
         </span>
         {{/foreach}}
         ]
-        <hr>
+        <div class="spacer grey no-margin-bottom"></div>
     </div>
 </div>

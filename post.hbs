@@ -44,11 +44,11 @@
         {{#is "post"}}
             <div class="row">
                 <div class="col s12 m10 offset-m1 l10 offset-l1">
-                    <div class="row">
+                    <div class="row center-xs">
                         <div class="col s12 m6 l6">
                             {{!-- Author --}}
                             {{#author}}
-                                <div class="left">
+                                <div class="left no-float-xs">
                                     <h5 class="center-xs">
                                         <strong>
                                             <a href="{{url}}" class="no-text-decoration">{{name}}</a>
@@ -81,8 +81,7 @@
                                     </strong>
                                 </h5>
                                 <a class="no-text-decoration social-widget"
-                                   href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url
-                                           absolute="true"}}"
+                                   href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
                                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                                     <i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i>
                                     <span class="hide">Twitter</span>

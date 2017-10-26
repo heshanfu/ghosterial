@@ -134,6 +134,10 @@ hr { background-color: #212121; }
     .center-xs { text-align: center !important; }
 }
 
+@media screen and (max-width: 320px) {
+    .card-content { height: 130px; }
+}
+
 .post-content ul, .post-content ol { padding-left: 30px; }
 
 .post-content ul > li { list-style-type: circle; }

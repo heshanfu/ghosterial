@@ -1,7 +1,6 @@
 # ghosterial
 
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/0x766c6164)
-[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/vlad-s/ghosterial/releases)
 
 A simple, material theme for Ghost, based on `materialize.css`.
 The design & layout is based on [boo](https://github.com/tenoku/boo).

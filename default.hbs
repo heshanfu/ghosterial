@@ -15,12 +15,9 @@
     <link rel="shortcut icon" href="{{asset "img/favicon.ico"}}">
 
     {{!-- materialize.css --}}
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen,projection"
-          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset "css/materialize.min.css"}}">
     {{!-- highlight.js --}}
-    <link rel="stylesheet" type="text/css" media="screen,projection"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset "css/highlightjs.default.css"}}">
     {{!-- Font Awesome icons --}}
     <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset "css/font-awesome.min.css"}}"/>
     {{!-- custom CSS --}}
@@ -30,6 +27,12 @@
 </head>
 <body>
 
+{{navigation}}
+<div class="z-depth-3">
+    <a href="#" data-activates="slide-out" class="white btn waves-effect raise-menu">
+        <i class="fa fa-bars" aria-hidden="true"></i> Menu
+    </a>
+</div>
 {{{body}}}
 
 <footer class="page-footer transparent no-padding-top">
@@ -49,14 +52,13 @@
 </footer>
 
 {{!-- jQuery --}}
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="{{asset "js/jquery-3.2.1.min.js"}}"></script>
 {{!-- highlight.js --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script src="{{asset "js/highlight.min.js"}}"></script>
+<script src="{{asset "js/highlight.go.min.js"}}"></script>
 {{!-- materialize.css --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="{{asset "js/materialize.min.js"}}"></script>
+<script src="{{asset "js/custom.js"}}"></script>
 {{!-- Ghost footer --}}
 {{ghost_foot}}
 </body>

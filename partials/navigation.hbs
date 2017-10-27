@@ -1,18 +1,39 @@
-<div class="row center">
-    <div class="col s12 m8 offset-m2 grey-text text-darken-3" style="margin-top: 15px;">
-        [
-        {{#foreach navigation}}
-            <span class="navigation-menu-item">
-            <a href="{{url absolute="true"}}" class="no-text-decoration">
-                {{#if current}}
-                    <strong>{{label}}</strong>
-                {{else}}
-                    {{label}}
-                {{/if}}
+<ul id="slide-out" class="side-nav">
+    <li>
+        <div class="user-view">
+            {{#if @blog.logo}}
+                <p><img class="circle" src="{{img_url @blog.logo}}"></p>
+            {{/if}}
+            <span class="grey-text text-darken-3 name">{{@blog.title}}</span>
+            <span class="grey-text text-darken-3 email">{{@blog.description}}</span>
+        </div>
+    </li>
+
+    <li>
+        <div class="divider"></div>
+    </li>
+
+    {{#foreach navigation}}
+        <li><a href="{{url absolute="true"}}" class="waves-effect">{{label}}</a></li>
+    {{/foreach}}
+
+    <li>
+        <div class="divider"></div>
+    </li>
+
+    {{#if @blog.twitter}}
+        <li>
+            <a href="{{twitter_url}}" target="_blank" class="waves-effect">
+                <i class="fa fa-twitter no-margin-right" aria-hidden="true"></i> {{@blog.twitter}}
             </a>
-        </span>
-        {{/foreach}}
-        ]
-        <div class="spacer grey no-margin-bottom"></div>
-    </div>
-</div>
+        </li>
+    {{/if}}
+
+    {{#if @blog.facebook}}
+        <li>
+            <a href="{{facebook_url}}" target="_blank" class="waves-effect">
+                <i class="fa fa-facebook no-margin-right" aria-hidden="true"></i> {{@blog.facebook}}
+            </a>
+        </li>
+    {{/if}}
+</ul>

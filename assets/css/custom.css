@@ -124,6 +124,12 @@ hr { background-color: #212121; }
     font-weight: 300;
 }
 
+.raise-menu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
 @media screen and (min-width: 576px) {
     .post-content img { max-width: 120%; }
 }

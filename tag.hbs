@@ -9,9 +9,7 @@
     </div>
 
     <div class="container">
-        {{navigation}}
-
-        <div class="row">
+        <div class="row" style="margin-top: 30px;">
             <div class="col s12 m6 offset-m3 l6 offset-l3 center">
                 <h1 class="no-margin-top">{{name}}</h1>
             </div>
@@ -38,11 +36,5 @@
         </div>
     </div>
 
-    {{#if pagination.total}}
-        {{> "loop"}}
-    {{else}}
-        <div class="center">
-            <h4>No posts available.</h4>
-        </div>
-    {{/if}}
+    {{> "loop"}}
 </main>

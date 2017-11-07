@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -44,7 +44,8 @@
                     © 2016-{{date format="YYYY"}}
                 </p>
                 <p class="right no-float-xs">
-                    powered by <a href="https://github.com/vlad-s/ghosterial" target="_blank">ghosterial</a>
+                    powered by
+                    <a href="https://github.com/vlad-s/ghosterial" target="_blank" rel="noopener">ghosterial</a>
                 </p>
             </div>
         </div>
@@ -54,11 +55,11 @@
 {{!-- jQuery --}}
 <script src="{{asset "js/jquery-3.2.1.min.js"}}"></script>
 {{!-- highlight.js --}}
-<script src="{{asset "js/highlight.min.js"}}"></script>
-<script src="{{asset "js/highlight.go.min.js"}}"></script>
+<script src="{{asset "js/highlight.min.js"}}" async></script>
+<script src="{{asset "js/highlight.go.min.js"}}" async></script>
 {{!-- materialize.css --}}
-<script src="{{asset "js/materialize.min.js"}}"></script>
-<script src="{{asset "js/custom.js"}}"></script>
+<script src="{{asset "js/materialize.min.js"}}" async></script>
+<script src="{{asset "js/custom.js"}}" async></script>
 {{!-- Ghost footer --}}
 {{ghost_foot}}
 </body>

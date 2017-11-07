@@ -2,7 +2,7 @@
     <li>
         <div class="user-view">
             {{#if @blog.logo}}
-                <p><img class="circle" src="{{img_url @blog.logo}}"></p>
+                <p><img class="circle" src="{{img_url @blog.logo}}" alt="blog's logo"></p>
             {{/if}}
             <span class="grey-text text-darken-3 name">{{@blog.title}}</span>
             <span class="grey-text text-darken-3 email">{{@blog.description}}</span>
@@ -23,7 +23,7 @@
 
     {{#if @blog.twitter}}
         <li>
-            <a href="{{twitter_url}}" target="_blank" class="waves-effect">
+            <a href="{{twitter_url}}" target="_blank" rel="noopener" class="waves-effect">
                 <i class="fa fa-twitter no-margin-right" aria-hidden="true"></i> {{@blog.twitter}}
             </a>
         </li>
@@ -31,7 +31,7 @@
 
     {{#if @blog.facebook}}
         <li>
-            <a href="{{facebook_url}}" target="_blank" class="waves-effect">
+            <a href="{{facebook_url}}" target="_blank" rel="noopener" class="waves-effect">
                 <i class="fa fa-facebook no-margin-right" aria-hidden="true"></i> {{@blog.facebook}}
             </a>
         </li>

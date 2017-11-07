@@ -2,7 +2,7 @@
   "name": "ghosterial",
   "description": "A simple, material theme for Ghost.",
   "demo": "https://www.vlads.me/",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "ghost": "^1.0.0"
   },

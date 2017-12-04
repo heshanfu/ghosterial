@@ -5,9 +5,9 @@
 A simple, material theme for Ghost, based on `materialize.css`.
 The design & layout is based on [boo](https://github.com/tenoku/boo).
 
-![ghosterial on macOS](https://i.imgur.com/gibi9wa.png)
+![ghosterial on macOS](https://i.imgur.com/JKchguJ.png)
 
-![ghosterial on Android](https://i.imgur.com/BA6T5gm.png)
+![ghosterial on iOS](https://i.imgur.com/SDW4b3P.png)
 
 # Installation
 1. Download the [latest version](https://github.com/vlad-s/ghosterial/releases/) of `ghosterial`.
@@ -28,5 +28,5 @@ If even afterwards you still have an issue, please [write an issue](https://gith
 **Q: The blog doesn't look like I want it. Can you modify *thing*?**
 
 A: The theme is made for personal use. It looks good for me, so I'll use it.
-**If** something's broken or needs editing, please feel free to drop a [pull request](https://github.com/vlad-s/ghosterial/pulls) or fork the project.
+**If** something's broken or needs editing, please feel free to [write an issue](https://github.com/vlad-s/ghosterial/issues), drop a [pull request](https://github.com/vlad-s/ghosterial/pulls) or fork the project.
 I'm not the best on front end.

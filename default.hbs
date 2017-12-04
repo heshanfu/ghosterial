@@ -29,7 +29,7 @@
 
 {{navigation}}
 <div class="z-depth-3">
-    <a href="#" data-activates="slide-out" class="white btn waves-effect raise-menu">
+    <a href="#" data-target="slide-out" class="sidenav-trigger white btn waves-effect raise-menu">
         <i class="fa fa-bars" aria-hidden="true"></i> Menu
     </a>
 </div>
@@ -54,12 +54,14 @@
 
 {{!-- jQuery --}}
 <script src="{{asset "js/jquery-3.2.1.min.js"}}"></script>
-{{!-- highlight.js --}}
-<script src="{{asset "js/highlight.min.js"}}" async></script>
-<script src="{{asset "js/highlight.go.min.js"}}" async></script>
+{{!-- highlight.js - don't load it on index --}}
+{{^is "index"}}
+    <script src="{{asset "js/highlight.min.js"}}"></script>
+    <script src="{{asset "js/highlight.go.min.js"}}"></script>
+{{/is}}
 {{!-- materialize.css --}}
-<script src="{{asset "js/materialize.min.js"}}" async></script>
-<script src="{{asset "js/custom.js"}}" async></script>
+<script src="{{asset "js/materialize.min.js"}}"></script>
+<script src="{{asset "js/custom.js"}}"></script>
 {{!-- Ghost footer --}}
 {{ghost_foot}}
 </body>

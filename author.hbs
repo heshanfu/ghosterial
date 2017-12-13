@@ -31,30 +31,30 @@
         <div class="center grey-text text-darken-1 light">
             {{#if location}}
                 <p class="no-margin-bottom">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     {{location}}
                 </p>
             {{/if}}
             {{#if website}}
                 <p class="no-margin-bottom">
-                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <i class="fas fa-link" aria-hidden="true"></i>
                     <a href="{{website}}" class="no-text-decoration" target="_blank" rel="noopener">{{website}}</a>
                 </p>
             {{/if}}
             {{#if twitter}}
                 <p class="no-margin-bottom">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                     <a href="{{twitter_url}}" class="no-text-decoration" target="_blank" rel="noopener">{{twitter}}</a>
                 </p>
             {{/if}}
             {{#if facebook}}
                 <p class="no-margin-bottom">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
                     <a href="{{facebook_url}}" class="no-text-decoration" target="_blank" rel="noopener">{{facebook}}</a>
                 </p>
             {{/if}}
             <p>
-                <i class="fa fa-list-ul" aria-hidden="true"></i>
+                <i class="fas fa-list-ul" aria-hidden="true"></i>
                 {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
             </p>
         </div>

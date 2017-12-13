@@ -13,7 +13,7 @@
     {{!-- materialize.css --}}
     <link rel="stylesheet" type="text/css" media="screen" href="{{asset "css/materialize.min.css"}}">
     {{!-- Font Awesome icons --}}
-    <link rel="stylesheet" type="text/css" media="screen" href="{{asset "css/font-awesome.min.css"}}"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{asset "css/fontawesome-all.min.css"}}"/>
     {{!-- custom CSS --}}
     <link rel="stylesheet" type="text/css" media="screen" href="{{asset "css/custom.css"}}"/>
 </head>
@@ -41,15 +41,15 @@
             <div class="card center">
                 <div class="card-content">
                     <span class="card-title truncate grey-text text-darken-4">
-                        <i class="fa fa-exclamation-triangle"></i> Error {{code}} - {{message}}
+                        <i class="fas fa-exclamation-triangle"></i> Error {{code}} - {{message}}
                     </span>
                 </div>
                 <div class="card-action">
                     <a href="{{@blog.url}}" class="no-text-decoration">
-                        <i class="fa fa-home"></i> Home
+                        <i class="fas fa-home"></i> Home
                     </a>
                     <a href="javascript:window.history.go(-1);" class="no-text-decoration">
-                        <i class="fa fa-arrow-circle-o-left"></i> Go back
+                        <i class="far fa-arrow-alt-circle-left"></i> Go back
                     </a>
                 </div>
             </div>

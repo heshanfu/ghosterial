@@ -39,6 +39,10 @@ code {
     background-position: center;
 }
 
+.header-image.error {
+    height: 30vh;
+}
+
 .post-header-image {
     max-width: 85%;
     margin-left: auto;
@@ -145,6 +149,13 @@ hr { background-color: #212121; }
     padding-left: 5px;
     padding-right: 5px;
     line-height: 30px;
+}
+
+.post-date {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 5px;
 }
 
 .blink {
